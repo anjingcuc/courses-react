@@ -47,7 +47,7 @@ export function SlideRenderer({ content }: SlideRendererProps) {
           },
           img({ src, alt, ...props }) {
             // Add basePath to image URLs starting with /img/ only in production
-            const imageSrc = src?.startsWith('/img/') && basePath ? `${basePath}${src}` : src;
+            const imageSrc = typeof src === 'string' && src.startsWith('/img/') && basePath ? `${basePath}${src}` : src;
             return (
               <img
                 src={imageSrc}
@@ -59,7 +59,7 @@ export function SlideRenderer({ content }: SlideRendererProps) {
           },
           video({ src, ...props }) {
             // Add basePath to video URLs starting with /courses/ only in production
-            const videoSrc = src?.startsWith('/courses/') && basePath ? `${basePath}${src}` : src;
+            const videoSrc = typeof src === 'string' && src.startsWith('/courses/') && basePath ? `${basePath}${src}` : src;
             return (
               <video
                 src={videoSrc}
