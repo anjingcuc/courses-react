@@ -32,9 +32,9 @@
 
 ### 线上平台
 
-线上平台为中国大学慕课-<https://www.icourse163.org/>
+线上平台为畅课：https://courses.cuc.edu.cn/course/172626/content#/
 
-使用说明: [中国大学慕课学校云本校学生身份认证方法](./中国大学慕课学校云本校学生身份认证方法.pdf)
+课件：https://anjingcuc.github.io/courses-react/courses/aissop/
 
 ---
 
@@ -49,12 +49,6 @@
 补充: [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)
 
 <!-- .element style="font-size:50%"-->
-
---
-
-### 课程主要内容
-
-详见[思维导图](/cms)。
 
 --
 
