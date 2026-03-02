@@ -9,7 +9,7 @@ interface SlidePageProps {
   params: Promise<{ course: string; chapter: string }>;
 }
 
-const SLIDES_BASE_PATH = path.join(process.cwd(), '..', 'courses-wiki', 'docs');
+const SLIDES_BASE_PATH = path.join(process.cwd(), 'content', 'slides');
 
 // Pre-defined static params for build
 const staticParams = [

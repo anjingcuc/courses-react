@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const SLIDES_BASE_PATH = path.join(process.cwd(), '..', 'courses-wiki', 'docs');
+const SLIDES_BASE_PATH = path.join(process.cwd(), 'content', 'slides');
 
 export function getSlideContent(courseId: string, chapterId: string): string | null {
   const slidePath = path.join(SLIDES_BASE_PATH, courseId, chapterId, 'slide.txt');
