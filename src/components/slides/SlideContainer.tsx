@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Slide } from '@/lib/slideParser';
 import { SlideRenderer } from './SlideRenderer';
 
@@ -13,6 +13,7 @@ interface SlideContainerProps {
 export function SlideContainer({ slides, globalStyle, fullscreen = false }: SlideContainerProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentVertical, setCurrentVertical] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const slide = slides[currentSlide];
   const hasVertical = slide?.children && slide.children.length > 0;
@@ -37,6 +38,17 @@ export function SlideContainer({ slides, globalStyle, fullscreen = false }: Slid
     }
   }, [currentSlide, currentVertical, hasVertical, slides, slide]);
 
+  const toggleFullscreen = useCallback(() => {
+    const elem = containerRef.current;
+    if (!elem) return;
+
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(console.error);
+    } else {
+      elem.requestFullscreen().catch(console.error);
+    }
+  }, []);
+
   // Keyboard navigation
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -47,17 +59,14 @@ export function SlideContainer({ slides, globalStyle, fullscreen = false }: Slid
         e.preventDefault();
         navigate('prev');
       } else if (e.key === 'f' || e.key === 'F') {
-        if (document.fullscreenElement) {
-          document.exitFullscreen();
-        } else {
-          document.documentElement.requestFullscreen();
-        }
+        e.preventDefault();
+        toggleFullscreen();
       }
     };
 
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [navigate]);
+  }, [navigate, toggleFullscreen]);
 
   // Calculate display slide number
   const getSlideNumber = () => currentSlide + 1;
@@ -72,8 +81,10 @@ export function SlideContainer({ slides, globalStyle, fullscreen = false }: Slid
 
   return (
     <div
+      ref={containerRef}
       className={`slide-container ${fullscreen ? 'fullscreen' : 'embedded'}`}
       style={fullscreen ? { height: '100vh' } : undefined}
+      tabIndex={0}
     >
       {globalStyle && <style>{globalStyle}</style>}
 
