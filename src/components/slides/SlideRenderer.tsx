@@ -7,22 +7,45 @@ import { CodeBlock } from './CodeBlock';
 
 interface SlideRendererProps {
   content: string;
+  course?: string;
+  chapter?: string;
 }
 
 // Get basePath from runtime config
 const getBasePath = () => {
   if (typeof window !== 'undefined') {
     // In browser, check if we're on GitHub Pages
-    if (window.location.pathname.startsWith('/courses-wiki')) {
-      return '/courses-wiki';
+    if (window.location.pathname.startsWith('/courses-react')) {
+      return '/courses-react';
     }
   }
   return '';
 };
 
-export function SlideRenderer({ content }: SlideRendererProps) {
+export function SlideRenderer({ content, course, chapter }: SlideRendererProps) {
   const processed = processContent(content);
   const basePath = getBasePath();
+
+  // Helper to resolve relative URLs
+  const resolveUrl = (src: string | undefined): string | undefined => {
+    if (!src || typeof src !== 'string') return src;
+
+    // Absolute URL - just add basePath if needed
+    if (src.startsWith('/img/')) {
+      return basePath ? `${basePath}${src}` : src;
+    }
+    if (src.startsWith('/')) {
+      return basePath ? `${basePath}${src}` : src;
+    }
+
+    // Relative URL - prepend course/chapter path
+    if (course && chapter && !src.startsWith('http')) {
+      const resourcePath = `/courses/${course}/${chapter}/${src}`;
+      return basePath ? `${basePath}${resourcePath}` : resourcePath;
+    }
+
+    return src;
+  };
 
   return (
     <div className="slide-markdown">
@@ -46,8 +69,7 @@ export function SlideRenderer({ content }: SlideRendererProps) {
             );
           },
           img({ src, alt, ...props }) {
-            // Add basePath to image URLs starting with /img/ only in production
-            const imageSrc = typeof src === 'string' && src.startsWith('/img/') && basePath ? `${basePath}${src}` : src;
+            const imageSrc = resolveUrl(src);
             return (
               <img
                 src={imageSrc}
@@ -58,8 +80,7 @@ export function SlideRenderer({ content }: SlideRendererProps) {
             );
           },
           video({ src, ...props }) {
-            // Add basePath to video URLs starting with /courses/ only in production
-            const videoSrc = typeof src === 'string' && src.startsWith('/courses/') && basePath ? `${basePath}${src}` : src;
+            const videoSrc = resolveUrl(src);
             return (
               <video
                 src={videoSrc}

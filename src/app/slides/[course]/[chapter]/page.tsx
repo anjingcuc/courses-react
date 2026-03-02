@@ -113,6 +113,8 @@ export default async function SlidePage({ params }: SlidePageProps) {
       slides={slides}
       globalStyle={globalStyle}
       fullscreen={true}
+      course={courseId}
+      chapter={chapterId}
     />
   );
 }

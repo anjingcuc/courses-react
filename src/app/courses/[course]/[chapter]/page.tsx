@@ -153,6 +153,8 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
         slides={slides}
         globalStyle={globalStyle}
         fullscreen={false}
+        course={courseId}
+        chapter={chapterId}
       />
 
       {/* Navigation */}

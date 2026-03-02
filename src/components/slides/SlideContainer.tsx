@@ -8,9 +8,11 @@ interface SlideContainerProps {
   slides: Slide[];
   globalStyle?: string;
   fullscreen?: boolean;
+  course?: string;
+  chapter?: string;
 }
 
-export function SlideContainer({ slides, globalStyle, fullscreen = false }: SlideContainerProps) {
+export function SlideContainer({ slides, globalStyle, fullscreen = false, course, chapter }: SlideContainerProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentVertical, setCurrentVertical] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -89,7 +91,7 @@ export function SlideContainer({ slides, globalStyle, fullscreen = false }: Slid
       {globalStyle && <style>{globalStyle}</style>}
 
       <div className="slide-content">
-        {currentContent && <SlideRenderer content={currentContent.content} />}
+        {currentContent && <SlideRenderer content={currentContent.content} course={course} chapter={chapter} />}
       </div>
 
       {/* Navigation */}
