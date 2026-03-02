@@ -69,7 +69,7 @@ export function SlideRenderer({ content, course, chapter }: SlideRendererProps) 
             );
           },
           img({ src, alt, ...props }) {
-            const imageSrc = resolveUrl(src);
+            const imageSrc = typeof src === 'string' ? resolveUrl(src) : src;
             return (
               <img
                 src={imageSrc}
@@ -80,7 +80,7 @@ export function SlideRenderer({ content, course, chapter }: SlideRendererProps) 
             );
           },
           video({ src, ...props }) {
-            const videoSrc = resolveUrl(src);
+            const videoSrc = typeof src === 'string' ? resolveUrl(src) : src;
             return (
               <video
                 src={videoSrc}
