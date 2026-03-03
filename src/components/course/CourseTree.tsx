@@ -20,10 +20,10 @@ import '@xyflow/react/dist/style.css';
 import { courses } from '@/lib/courses';
 
 // Layout configuration
-const NODE_WIDTH = 180;
-const NODE_HEIGHT = 50;
-const HORIZONTAL_SPACING = 120;
-const VERTICAL_SPACING = 25;
+const NODE_WIDTH = 160;
+const NODE_HEIGHT = 40;
+const HORIZONTAL_SPACING = 50;
+const VERTICAL_SPACING = 15;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type CourseNodeData = {
