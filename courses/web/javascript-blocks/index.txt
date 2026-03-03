@@ -1,0 +1,289 @@
+3:I[53258,[],""]
+6:I[35471,[],""]
+7:I[66344,["295","static/chunks/295-030db3f36cda78cf.js","185","static/chunks/app/layout-fea2457477c40dbc.js"],"Header"]
+4:["course","web","d"]
+5:["chapter","javascript-blocks","d"]
+0:["bKHNnVp_Cy6IgC9sr8nx8",[[["",{"children":["courses",{"children":[["course","web","d"],{"children":[["chapter","javascript-blocks","d"],{"children":["__PAGE__?{\"course\":\"web\",\"chapter\":\"javascript-blocks\"}",{}]}]}]}]},"$undefined","$undefined",true],["",{"children":["courses",{"children":[["course","web","d"],{"children":[["chapter","javascript-blocks","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","courses","children","$4","children","$5","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","courses","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","courses","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/courses-react/_next/static/css/7cf1e90be610d4ae.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen flex flex-col bg-gray-50","children":[["$","$L7",null,{}],["$","main",null,{"className":"flex-grow","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"className":"border-t border-gray-100 py-8 mt-16","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between items-center","children":[["$","div",null,{"className":"text-center md:text-left mb-4 md:mb-0","children":[["$","p",null,{"className":"text-sm font-medium","style":{"color":"var(--color-text)"},"children":"课程资料 - 教学课件网站"}],["$","p",null,{"className":"text-xs mt-1","style":{"color":"var(--color-text-muted)"},"children":"基于 Next.js + React 构建 · 托管于 GitHub Pages"}]]}],["$","div",null,{"className":"flex items-center space-x-6","children":["$","a",null,{"href":"https://github.com/anjingcuc/courses-wiki","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm transition-colors hover:opacity-70","style":{"color":"var(--color-primary-light)"},"children":[["$","svg",null,{"className":"w-4 h-4","fill":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"fillRule":"evenodd","d":"M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z","clipRule":"evenodd"}]}],"GitHub"]}]}]]}]}]}]]}]}]],null],null],["$L8",null]]]]
+9:I[13295,["295","static/chunks/295-030db3f36cda78cf.js","924","static/chunks/924-0ab8daba027740c3.js","386","static/chunks/app/courses/%5Bcourse%5D/%5Bchapter%5D/page-d5866f9d129d0efc.js"],""]
+a:I[55953,["295","static/chunks/295-030db3f36cda78cf.js","924","static/chunks/924-0ab8daba027740c3.js","386","static/chunks/app/courses/%5Bcourse%5D/%5Bchapter%5D/page-d5866f9d129d0efc.js"],"SlideContainer"]
+b:Td6a,### 结合 HTML 的例子
+
+结合 HTML 上的输入元素来使用分支条件做出响应。
+
+```html
+<label for="profession">选择你的英雄: </label>
+<select id="profession">
+  <option value="">--下拉选择--</option>
+  <option value="gangplank">船长</option>
+  <option value="leesin">盲僧</option>
+  <option value="galio">加里奥</option>
+  <option value="xayah">霞</option>
+  <option value="thresh">锤石</option>
+</select>
+```
+
+{:style="float:left;width:48%;padding:1%;height:420px;display:flex;align-items:center;"}
+
+```javascript
+let select = document.querySelector("select");
+let para = document.querySelector("p");
+
+select.addEventListener("change", setHero);
+
+function setHero() {
+  let choice = select.value;
+
+  if (choice === "gangplank") {
+    para.textContent =
+      "诡计多端、心狠手辣的普朗克是被废黜的强盗之王，他令人恐惧的名号广达远至。他一度是港口城市比尔吉沃特的统治者。虽然现在他的威权已经不再，但人们相信这只会让他变得更加可怖。普朗克若是知道有人要从他手中抢走比尔吉沃特，必然会大肆血洗这座城市。而如今有了火枪、弯刀，还有一桶桶的火药，他决心要夺回自己失去的东西。";
+  } else if (choice === "leesin") {
+    para.textContent =
+      "李青是艾欧尼亚古老武术的大师，讲原则、重信义的他能将神龙之灵的精粹运用自如，助他面对任何挑战。虽然他多年前便已双目失明，但这位武僧依然献出自己的全部力量，用生命捍卫家园，抵御任何胆敢打破这里神圣均衡的人。所有因他安静冥想的举动而掉以轻心的敌人都将品尝他燃烧的拳头和炽烈的回旋踢。";
+  } else if (choice === "galio") {
+    para.textContent =
+      "光彩熠熠的德玛西亚城外，石巨像加里奥始终如一地守望着。他被创造出来是为了抵挡来犯的法师，但却经常要一动不动地矗立数十年，只有当强大的魔法力量出现时，他才会激活。而只要加里奥活动起来，他便会充分利用每一刻，品味荡气回肠的战斗和来之不易的守护人民的荣耀。可惜，他的胜利永远都喜忧参半，因为消灭魔法的同时，也消灭了他活跃力量的源泉。每一次胜利都会使他再次进入不知世事的休眠。";
+  } else if (choice === "xayah") {
+    para.textContent =
+      "身为瓦斯塔亚的志士，霞要掀起一场革命来拯救她的族群。她身法敏捷又慧心独具，凭借锋芒逼人的羽刃，扫除任何异己。霞与她的灵魂伴侣洛并肩作战，共同守护他们日渐衰落的部族，同时韬光养晦，希望终有一天能率领全族重夺昔日荣光。";
+  } else if (choice === "thresh") {
+    para.textContent =
+      "暴虐又狡猾的锤石是一个来自暗影岛的亡灵，野心勃勃、不知疲倦。他曾经是无数奥秘的看守，在一种超越生死的力量下骨肉瓦解，而现在他则使用自己独创的钻心痛苦缓慢地折磨并击溃其他人，以此作为自己存在下去的手段。被他迫害的人需要承受远超死亡的痛苦，因为锤石会让他们的灵魂也饱尝剧痛，将他们的灵魂囚禁在自己的灯笼中，经受永世的折磨。";
+  } else {
+    para.textContent = "";
+  }
+}
+```
+
+{:style="float:left;width:48%;padding:1%;height:420px;display:flex;align-items:center;"}c:Taec,### switch 示例
+
+本节开头的例子可以用 `switch` 改造成更合理的结构。
+
+```javascript
+function setHero() {
+  let choice = select.value;
+
+  switch (choice) {
+    case "gangplank":
+      para.textContent =
+        "诡计多端、心狠手辣的普朗克是被废黜的强盗之王，他令人恐惧的名号广达远至。他一度是港口城市比尔吉沃特的统治者。虽然现在他的威权已经不再，但人们相信这只会让他变得更加可怖。普朗克若是知道有人要从他手中抢走比尔吉沃特，必然会大肆血洗这座城市。而如今有了火枪、弯刀，还有一桶桶的火药，他决心要夺回自己失去的东西。";
+      break;
+    case "leesin":
+      para.textContent =
+        "李青是艾欧尼亚古老武术的大师，讲原则、重信义的他能将神龙之灵的精粹运用自如，助他面对任何挑战。虽然他多年前便已双目失明，但这位武僧依然献出自己的全部力量，用生命捍卫家园，抵御任何胆敢打破这里神圣均衡的人。所有因他安静冥想的举动而掉以轻心的敌人都将品尝他燃烧的拳头和炽烈的回旋踢。";
+      break;
+    case "galio":
+      para.textContent =
+        "光彩熠熠的德玛西亚城外，石巨像加里奥始终如一地守望着。他被创造出来是为了抵挡来犯的法师，但却经常要一动不动地矗立数十年，只有当强大的魔法力量出现时，他才会激活。而只要加里奥活动起来，他便会充分利用每一刻，品味荡气回肠的战斗和来之不易的守护人民的荣耀。可惜，他的胜利永远都喜忧参半，因为消灭魔法的同时，也消灭了他活跃力量的源泉。每一次胜利都会使他再次进入不知世事的休眠。";
+      break;
+    case "xayah":
+      para.textContent =
+        "身为瓦斯塔亚的志士，霞要掀起一场革命来拯救她的族群。她身法敏捷又慧心独具，凭借锋芒逼人的羽刃，扫除任何异己。霞与她的灵魂伴侣洛并肩作战，共同守护他们日渐衰落的部族，同时韬光养晦，希望终有一天能率领全族重夺昔日荣光。";
+      break;
+    case "thresh":
+      para.textContent =
+        "暴虐又狡猾的锤石是一个来自暗影岛的亡灵，野心勃勃、不知疲倦。他曾经是无数奥秘的看守，在一种超越生死的力量下骨肉瓦解，而现在他则使用自己独创的钻心痛苦缓慢地折磨并击溃其他人，以此作为自己存在下去的手段。被他迫害的人需要承受远超死亡的痛苦，因为锤石会让他们的灵魂也饱尝剧痛，将他们的灵魂囚禁在自己的灯笼中，经受永世的折磨。";
+      break;
+    default:
+      para.textContent = "";
+  }
+}
+```d:T4e9,### break 退出循环
+
+在循环过程中，即使没有满足循环的退出条件，我们仍然可以在循环操作的过程中退出循环。比如我们看一个查找个人信息的例子。
+
+```html
+<label for="name">请输入姓名: </label>
+<input id="name" type="text" />
+<button>查找</button>
+```
+
+{:style="float:left;width:48%;padding:1%;height:420px;display:flex;align-items:center;"}
+
+```javascript
+let students = ['小白:18岁，呆萌', '小红:17岁，美丽', '小明:18岁，开朗'，'小南:17岁，聪慧']
+
+const paragraph = document.querySelector('p');
+const input = document.querySelector('input');
+const button = document.querySelector('button');
+
+button.addEventListener('click', findStudent);
+
+function findStudent() {
+  let searchName = input.value;
+
+  let found = false;
+
+  for (let i = 0; i < students.length; i++) {
+    let splitStudentInfo = students.split(':');
+    let currentName = splitStudentInfo[0];
+    let info = splitStudentInfo[1];
+    if (currentName === searchName) {
+      paragraph.textContent = info;
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) {
+    paragraph.textContent = "查无此人";
+  }
+}
+```
+
+{:style="float:left;width:48%;padding:1%;height:420px;display:flex;align-items:center;"}e:T50b,### continue 跳过循环中部分操作
+
+在循环过程中，还可以使用 `continue` 来跳过本次循环的后续操作，进入下一次循环，常常在筛选过程中使用，比如显示特定性别的同学。
+
+```html
+<label for="gender">选择显示的性别: </label>
+<select id="gender">
+  <option value="male">男</option>
+  <option value="female">女</option>
+</select>
+```
+
+{:style="float:left;width:48%;padding:1%;height:420px;display:flex;align-items:center;"}
+
+```javascript
+let students = [
+  { name: "小白", gender: "female", age: 18 },
+  { name: "小明", gender: "male", age: 17 },
+  { name: "小红", gender: "female", age: 16 },
+  { name: "小北", gender: "male", age: 18 }
+];
+
+const paragraph = document.querySelector("p");
+const select = document.querySelector("select");
+
+select.addEventListener("change", filter);
+
+function filter() {
+  let gender = select.value;
+
+  for (let i = 0; i < students.length; i++) {
+    let student = students[i];
+
+    if (student.gender != gender) {
+      continue;
+    }
+
+    let para = document.createElement("p");
+    para.textContent = student.name + "，今年" + student.age + "岁";
+    document.body.appendChild(para);
+  }
+}
+```
+
+{:style="float:left;width:48%;padding:1%;height:420px;display:flex;align-items:center;"}f:T4c3,### while 与 do ... while
+
+除了 `for` 循环以外还有其他常见的循环是 `while` 和 `do ... while`循环。我们将上面的查找个人信息的循环改为 while 循环。
+
+```javascript
+function findStudent_while() {
+  let searchName = input.value;
+
+  let found = false;
+
+  let i = 0; // 初始条件
+  while (i < students.length) {
+    //  循环条件
+    let splitStudentInfo = students.split(":");
+    let currentName = splitStudentInfo[0];
+    let info = splitStudentInfo[1];
+    if (currentName === searchName) {
+      paragraph.textContent = info;
+      found = true;
+      break;
+    }
+
+    i++; // 最终操作
+  }
+
+  if (!found) {
+    paragraph.textContent = "查无此人";
+  }
+}
+
+function findStudent_do_while() {
+  let searchName = input.value;
+
+  let found = false;
+
+  let i = 0; // 初始条件
+  do {
+    let splitStudentInfo = students.split(":");
+    let currentName = splitStudentInfo[0];
+    let info = splitStudentInfo[1];
+    if (currentName === searchName) {
+      paragraph.textContent = info;
+      found = true;
+      break;
+    }
+
+    i++; // 最终操作
+  } while (i < students.length); //  循环条件
+
+  if (!found) {
+    paragraph.textContent = "查无此人";
+  }
+}
+```10:T8c3,## 函数
+
+函数是一段能够被反复调用的代码块，我们可以利用函数来使得程序结构更加清洗，模块化，减少重复性的代码。
+
+```javascript
+function setGameOver() {
+  // disabled 属性设置为 true 使得按钮和输入框都不能使用。
+  guessField.disabled = true;
+  guessSubmit.disabled = true;
+
+  // 新增一个重置按钮，按钮上的内容为 '开始新游戏'
+  resetButton = document.createElement("button");
+  resetButton.textContent = "开始新游戏";
+  document.body.appendChild(resetButton);
+
+  // 为重置按钮添加点击事件监听器和相应的事件处理器也就是函数resetGame
+  resetButton.addEventListener("click", resetGame);
+}
+
+function checkGuess() {
+  // 获取用户输入的内容，并用Number函数转化为数字，保存在userGuess变量中。
+  let userGuess = Number(guessField.value);
+
+  // 条件代码块，如果guessCount的值是1，那么这个条件为true，执行花括号内部代码。
+  // 否则就不执行花括号中的代码，这样来判断玩家是不是第一次猜数字。
+  if (guessCount === 1) {
+    guesses.textContent = "上次猜的数：";
+  }
+  // 将用户猜测的内容后面加上一个空格，并追加到 guesses 的文本内容中。
+  guesses.textContent += userGuess + " ";
+
+  // 用户猜对了，则输出提示信息，并调用一个结束游戏的函数。
+  if (userGuess === randomNumber) {
+    lastResult.textContent = "恭喜你！猜对了";
+    lastResult.style.backgroundColor = "green";
+    lowOrHi.textContent = "";
+    setGameOver();
+  } else if (guessCount === 10) {
+    // 用户猜了十次还没有对，则提示挂掉。
+    lastResult.textContent = "!!!GAME OVER!!!";
+    setGameOver();
+  } else {
+    // 猜错了，但还没有到十次，则提示用户数字高还是低。
+    lastResult.textContent = "你猜错了！";
+    lastResult.style.backgroundColor = "red";
+    if (userGuess < randomNumber) {
+      lowOrHi.textContent = "你猜低了！";
+    } else if (userGuess > randomNumber) {
+      lowOrHi.textContent = "你猜高了";
+    }
+  }
+
+  // 清空用户输入内容并且增加一次猜测计数器。
+  guessCount++;
+  guessField.value = "";
+  guessField.focus();
+}
+```2:["$","div",null,{"className":"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8","children":[["$","nav",null,{"className":"mb-6 text-sm","children":[["$","$L9",null,{"href":"/","className":"text-blue-600 hover:text-blue-800","children":"首页"}],["$","span",null,{"className":"mx-2 text-gray-400","children":"/"}],["$","$L9",null,{"href":"/courses/web","className":"text-blue-600 hover:text-blue-800","children":"网页设计与制作"}],["$","span",null,{"className":"mx-2 text-gray-400","children":"/"}],["$","span",null,{"className":"text-gray-600","children":"JavaScript 代码块"}]]}],["$","div",null,{"className":"mb-6","children":[["$","h1",null,{"className":"text-2xl font-bold text-gray-900","children":"JavaScript 代码块"}],["$","p",null,{"className":"text-sm text-gray-500 mt-1","children":["网页设计与制作"," - 第 ",9," 章"]}]]}],["$","div",null,{"className":"bg-blue-50 text-blue-800 text-sm px-4 py-2 rounded-lg mb-4","children":["使用 ← → 方向键或空格键切换幻灯片，按 F 键全屏查看",["$","$L9",null,{"href":"/slides/web/javascript-blocks","className":"ml-4 text-blue-600 hover:text-blue-800 underline","children":"全屏查看"}]]}],["$","$La",null,{"slides":[{"id":"slide-1","content":"# JavaScript 结构化代码"},{"id":"slide-2","content":"## 基础指南\n\nJavaScript 中有多种结构化的代码块，通过组合使用这些代码块我们能很好的划分和组织程序逻辑，包括：\n\n- 分支\n- 循环\n- 函数\n- 事件\n\n{:style=\"font-size:70%;\"}"},{"id":"slide-3","content":"## 分支条件\n\n通过对特定条件进行判断，JavaScript 中可以控制程序走向不同的分支运行。\n\n![分支](/img/cookie-choice-small.png){:style=\"width:70%;\"}\n\n{:style=\"text-align: center;\"}","children":[{"id":"slide-4","content":"### if ... else\n\nJavaScript 中最常见的是使用 `if ... else` 语句来实现分支控制。\n\n```javascript\nif (condition) {\n  // condition 为 true 或者 false\n  // 如果 condition 是 true 则执行这里\n} else {\n  // 如果 condition 是 false 则执行这里\n}\n\nif (condition) {\n  // condition 是 true 执行这里，如果 false 则什么都不做\n}\n\nif (condition) {\n  // 如果 condition 是 true 则执行这里\n} else if (anotherCondition) {\n  // 如果 condition 是 false，\n  // 同时 anotherCondition 是 true 执行这里\n} else {\n  // condition 和 anotherCondition 都是 false\n}\n```"},{"id":"slide-5","content":"### 真实例子\n\n真实的双十一“剁手”。\n\n```javascript\nlet balance = 1.0;\nif (balance === 100000000.0) {\n  clearAllStudentCart(); // 如果我实现了一个\"小目标\"我就清空大家的购物车\n} else {\n  cry(); // 痛哭在梦醒时分\n}\n```"},{"id":"slide-6","content":"$b"},{"id":"slide-7","content":"### 比较运算符\n\n上面两个例子都使用了 `if ... else` 语句，一般在分支条件中，常常使用我们上节课讲到的比较运算符来表示分支条件。详见[JavaScript 基础](../javascript-basic)的比较运算符部分。"},{"id":"slide-8","content":"### 分支嵌套\n\n大部分高级编程语言中都支持分支的嵌套，也就是分支里面还有分支，JavaScript 也是如此。\n\n```javascript\nif (choice === \"leesin\") {\n  if (player === \"Tian\") {\n    para.textContent = \"战斗力爆表\";\n  } else {\n    para.textContent = \"玩玩得了\";\n  }\n}\n```"},{"id":"slide-9","content":"### 逻辑运算符\n\n除了使用一个包含`比较运算符`的`条件表达式`来作为分支条件，还可以使用`逻辑运算符`来组合多个`条件表达式`作为分支条件。\n\n| 逻辑运算符   | 作用                                                                                                        |\n| ------------ | ----------------------------------------------------------------------------------------------------------- |\n| `&&`         | 逻辑与; 使得并列两个或者更多的表达式成为可能，只有当这些表达式每一个都返回 true 时，整个表达式才会返回 true |\n| &#124;&#124; | 逻辑或; 当两个或者更多表达式当中的任何一个返回 true 则整个表达式将会返回 true.                              |\n| `!`          | 逻辑非; 对一个布尔值取反, 非 true 返回 false,非 false 返回 true.                                            |\n\n{:style=\"font-size:70%;\"}"},{"id":"slide-10","content":"### 逻辑运算符示例\n\n```javascript\nlet boyLoveGirl = true;\nlet girlLoveBoy = false;\n\nif (boyLoveGirl && girlLoveBoy) {\n  console.log(\"真爱\");\n} else if (boyLoveGirl || girlLoveBoy) {\n  console.log(\"备胎\");\n} else {\n  console.log(\"路人\");\n}\n\nlet girlHasBoyfriend = false;\n\nif (!girlHasBoyfriend) {\n  console.log(\"You can you up.\");\n} else {\n  console.log(\"Bless them.\");\n}\n```"}]},{"id":"slide-11","content":"## switch 语句\n\n处理多种情况组合时，`if ... else` 分支可能特别多，写出来特别长；这种情况下，应该使用 `switch` 语句来实现分支。\n\n```javascript\nswitch (expression) {\n  case choice1:\n    // code for choice1\n    break;\n  case choice2:\n    // code for choice2\n    break;\n\n  // more choices\n\n  default:\n  // code for default\n}\n```","children":[{"id":"slide-12","content":"$c"}]},{"id":"slide-13","content":"## 三元/条件运算符\n\n三元/条件运算符是一种简化的分支条件形式，可以很方便的根据条件给变量赋不同值。\n\n```javascript\n(condition) ? code for true : code for false\n```","children":[{"id":"slide-14","content":"### 三元/条件运算符示例\n\n```html\n<label for=\"gender\">选择你的性别: </label>\n<select id=\"gender\">\n  <option value=\"male\">男</option>\n  <option value=\"female\">女</option>\n</select>\n```\n\n{:style=\"float:left;width:48%;padding:1%;height:420px;display:flex;align-items:center;\"}\n\n```javascript\nlet select = document.querySelector(\"select\");\nlet para = document.querySelector(\"p\");\n\nselect.addEventListener(\"change\", setGender);\n\nfunction setGender() {\n  let choice = select.value == \"male\" ? \"男士商品\" : \"女士商品\";\n\n  para.textContent = choice;\n}\n```\n\n{:style=\"float:left;width:48%;padding:1%;height:420px;display:flex;align-items:center;\"}"}]},{"id":"slide-15","content":"## 循环\n\n循环是日常生活中很常见的状态，在程序中，我们也可以使用循环来实现一些重复的动作。\n\n![循环](/img/loop_js-02-farm-cn.png){:style=\"width:70%;\"}\n\n{:style=\"text-align: center;\"}","children":[{"id":"slide-16","content":"### 循环的形式\n\n循环可以包括以下部分的一个或多个：开始条件、结束条件、迭代器，伪代码形式的循环如下：\n\n```javascript\nloop(food = 0; foodNeeded = 10) {\n  if (food = foodNeeded) {\n    exit loop;\n    // 我们有足够的食物了，回家吧。\n  } else {\n    food += 2; // 花一个小时多收集两个食物。\n    // 循环将会继续执行。\n  }\n}\n```"},{"id":"slide-17","content":"### 循环例子-数数\n\n我们知道 `console.log(1);` 这一语句可以在浏览器控制台中输出数字1，假设我们需要实现从一数到100，那么，就可以用到循环。\n\n```javascript\nfor (let i = 1; i <= 100; i++) {\n  console.log(i);\n}\n```"},{"id":"slide-18","content":"### for 语句\n\n上面的例子用到了第一种 JavaScript 中常见的循环写法——`for` 语句。\n\n- 关键词 `for` 后面接一个括号 `()`；\n- 括号中包含以下三个部分，并用 `;` 分隔：\n  - `初始条件`，包含循环开始时的一些初始化变量和初始操作；\n  - `循环条件`，只有满足该条件，循环才会继续执行；\n  - `最终操作`，每次循环后要执行该操作；\n- 然后紧跟括号的是 `{}` 包含每次循环要执行的代码。\n\n{:style=\"font-size:70%;\"}"},{"id":"slide-19","content":"$d"},{"id":"slide-20","content":"$e"},{"id":"slide-21","content":"$f"}]},{"id":"slide-22","content":"$10","children":[{"id":"slide-23","content":"### 浏览器内置函数\n\n浏览器以及 JavaScript 内置了一些函数来帮助提供一些常见的功能，比如我们之前用过的 `console.log()` 可以在浏览器控制台中输入一段文本，以此来观察程序的运行状态，还可以使用 `Math.random()` 来随机生成一个数字。\n\n```javascript\nlet name = \"anjing\";\nlet age = 18;\n\nconsole.log(\"My name is\" + name + \", \" + \"I'm \" + age + \"years old.\");\n```"},{"id":"slide-24","content":"### 函数和方法\n\nJavaScript 是一种面向对象的编程语言，每个对象内部的函数叫做这个对象的\"方法\"，上一页说到的 `console.log()` 实际上是 `console` 对象的 `log()` 方法，而我们第一个猜数字游戏中的 `setGameOver()` 不属于某个对象，是函数。我们将在对象一节中详细介绍。"},{"id":"slide-25","content":"### 函数调用\n\n函数可以在其他的函数里面被调用或者直接调用，或者作为某个事件触发后的处理函数调用。\n\n```javascript\nfunction callee() {\n  alert(\"Call me maybe.\");\n}\n\nfunction caller() {\n  callee();\n}\n\ncaller();\n```"},{"id":"slide-26","content":"### 匿名函数\n\n一般情况下，我们需要给每个函数起名，帮助自己或者其他合作程序员理解函数的功能并且调用，但对于部分函数比如事件触发函数来说，频繁的起名字可能特别伤脑筋，这时我们可以使用匿名函数直接省略函数名。\n\n```javascript\nconst btn = document.querySelector(\"button\");\n\nbtn.onclick = function() {\n  alert(\"你好我的朋友。\");\n};\n\n// 与上面的代码实现了一样的效果\nbtn.addEventListner(\"click\", function() {\n  alert(\"你好我的朋友。\");\n});\n```"},{"id":"slide-27","content":"### 函数参数\n\n函数在不同的地方被调用，可能需要处理不同的数据，我们可以通过参数来将数据传递给函数。\n\n```javascript\nfunction greeting(name, age) {\n  console.log(\"My name is\" + name + \", \" + \"I'm \" + age + \"years old.\");\n}\n\nlet students = [\n  { name: \"小明\", age: 18 },\n  { name: \"小红\", age: 17 }\n];\n\nfor (let i = 0; i < students.length; i++) {\n  greeting(students[i].name, students[i].age);\n}\n```"},{"id":"slide-28","content":"### 函数的返回值\n\n函数除了能够接受不同的参数来进行处理，还能够将处理的结果返回给调用者，返回的结果叫做\"返回值\"。\n\n```javascript\nfunction sum(a, b) {\n  return a + b;\n}\n\nlet c = sum(1, 2); // a + b 即 1 + 2 的结果会赋值给c\nconsole.log(c); // 3\n```"},{"id":"slide-29","content":"### 作用域\n\n不论是函数还是变量都有作用域的概念，函数名和变量都只能在它们自己的作用域中起作用，这样才能避免程序混乱。\n\n```html\n<script src=\"first.js\"></script>\n<script src=\"second.js\"></script>\n<script>\n  greeting();\n</script>\n```\n\n{:style=\"float:left;width:48%;padding:1%;\"}\n\n```javascript\n// first.js\nvar name = \"Chris\";\nfunction greeting() {\n  alert(\"Hello \" + name + \": welcome to our company.\");\n}\n\n// second.js\nvar name = \"Zaptec\";\nfunction greeting() {\n  alert(\"Our company is called \" + name + \".\");\n}\n```\n\n{:style=\"float:left;width:48%;padding:1%;\"}"}]},{"id":"slide-30","content":"## 事件\n\n\"事件\"是一个专业术语，系统会在特定事情发生的时候发出某种信号，我们收到这种信号就可以对做出相应的反应。这种机制我们叫做\"事件\"。常见事件举例如下，详细的事件列表请参考[事件参考](https://developer.mozilla.org/zh-CN/docs/Web/Events)。\n\n| 事件    | 发生的事情           |\n| ------- | -------------------- |\n| click   | 用户点击了某个元素   |\n| submit  | 用户提交了表单       |\n| resize  | 用户调整了浏览器大小 |\n| keydown | 用户按下了某个键     |\n\n{:style=\"font-size:70%;\"}","children":[{"id":"slide-31","content":"### 简单示例\n\n回顾我们之前点击按钮的例子。\n\n```javascript\nconst para = document.querySelector(\"p\");\n\npara.addEventListener(\"click\", updateName);\n\nfunction updateName() {\n  let name = prompt(\"输入一个新的名字：\");\n  para.textContent = \"玩家1：\" + name;\n}\n```"},{"id":"slide-32","content":"### 事件的不同处理方式\n\n可以用三种不同的机制来对特定事件做出响应。\n\n```html\n<button onclick=\"doit()\">点我呀</button>\n```\n\n{:style=\"float:left;width:48%;padding:1%;\"}\n\n```javascript\nfunction doit() {\n  alert(\"Just do it.\");\n}\n\nlet btn = document.querySelector(\"button\");\n\n// 早期常见方式，支持绝大多数浏览器\nbtn.onclick = doit;\n\n// 现代的方式，支持新的浏览器\nbtn.addEventListener(\"click\", doit);\n```\n\n{:style=\"float:right;width:48%;padding:1%;\"}"},{"id":"slide-33","content":"### 事件对象参数-示例\n\n<p style=\"text-align:left;font-size:0.65em\">事件被出发时，我们可以通过给处理函数传递一个\"事件对象\"作为其参数，这样可以在处理函数内部知道一些额外的信息，比如是哪个元素触发了这个事件。\n\n<iframe frameborder=\"0\" height=\"450\" src=\"https://mdn.mozillademos.org/zh-CN/docs/Learn/JavaScript/Building_blocks/Events$samples/Hidden_example?revision=1588610\" width=\"100%\"></iframe>"},{"id":"slide-34","content":"### 事件对象参数-代码\n\n```html\n<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Useful event target example</title>\n    \n  </head>\n  <body>\n    <script>\n      for (var i = 1; i <= 16; i++) {\n        var myDiv = document.createElement(\"div\");\n        document.body.appendChild(myDiv);\n      }\n      function random(number) {\n        return Math.floor(Math.random() * number);\n      }\n      function bgChange() {\n        var rndCol =\n          \"rgb(\" + random(255) + \",\" + random(255) + \",\" + random(255) + \")\";\n        return rndCol;\n      }\n      var divs = document.querySelectorAll(\"div\");\n      for (var i = 0; i < divs.length; i++) {\n        divs[i].onclick = function(e) {\n          e.target.style.backgroundColor = bgChange();\n        };\n      }\n    </script>\n  </body>\n</html>\n```"}]},{"id":"slide-35","content":"## Q & A"}],"globalStyle":".reveal p {\n    text-align: justify;\n    font-size: 0.8em;\n  }\n  .reveal ul {\n    display: block;\n  }\n  .reveal ol {\n    display: block;\n  }","fullscreen":false,"course":"web","chapter":"javascript-blocks"}],["$","div",null,{"className":"flex justify-between items-center mt-6 pt-6 border-t border-gray-200","children":[["$","$L9",null,{"href":"/courses/web/javascript-basic","className":"flex items-center text-blue-600 hover:text-blue-800","children":[["$","svg",null,{"className":"w-4 h-4 mr-1","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M15 19l-7-7 7-7"}]}],"上一章：","JavaScript 基础"]}],["$","$L9",null,{"href":"/courses/web/javascript-API","className":"flex items-center text-blue-600 hover:text-blue-800","children":["下一章：","JavaScript DOM API",["$","svg",null,{"className":"w-4 h-4 ml-1","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M9 5l7 7-7 7"}]}]]}]]}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"课程资料"}],["$","meta","3",{"name":"description","content":"教学课件网站 - Python、Web、网络安全等课程"}]]
+1:null

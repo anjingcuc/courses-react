@@ -1,0 +1,197 @@
+3:I[53258,[],""]
+6:I[35471,[],""]
+7:I[66344,["295","static/chunks/295-030db3f36cda78cf.js","185","static/chunks/app/layout-fea2457477c40dbc.js"],"Header"]
+4:["course","web","d"]
+5:["chapter","bootstrap","d"]
+0:["bKHNnVp_Cy6IgC9sr8nx8",[[["",{"children":["courses",{"children":[["course","web","d"],{"children":[["chapter","bootstrap","d"],{"children":["__PAGE__?{\"course\":\"web\",\"chapter\":\"bootstrap\"}",{}]}]}]}]},"$undefined","$undefined",true],["",{"children":["courses",{"children":[["course","web","d"],{"children":[["chapter","bootstrap","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","courses","children","$4","children","$5","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","courses","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","courses","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/courses-react/_next/static/css/7cf1e90be610d4ae.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"min-h-screen flex flex-col bg-gray-50","children":[["$","$L7",null,{}],["$","main",null,{"className":"flex-grow","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"className":"border-t border-gray-100 py-8 mt-16","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between items-center","children":[["$","div",null,{"className":"text-center md:text-left mb-4 md:mb-0","children":[["$","p",null,{"className":"text-sm font-medium","style":{"color":"var(--color-text)"},"children":"课程资料 - 教学课件网站"}],["$","p",null,{"className":"text-xs mt-1","style":{"color":"var(--color-text-muted)"},"children":"基于 Next.js + React 构建 · 托管于 GitHub Pages"}]]}],["$","div",null,{"className":"flex items-center space-x-6","children":["$","a",null,{"href":"https://github.com/anjingcuc/courses-wiki","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm transition-colors hover:opacity-70","style":{"color":"var(--color-primary-light)"},"children":[["$","svg",null,{"className":"w-4 h-4","fill":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"fillRule":"evenodd","d":"M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z","clipRule":"evenodd"}]}],"GitHub"]}]}]]}]}]}]]}]}]],null],null],["$L8",null]]]]
+9:I[13295,["295","static/chunks/295-030db3f36cda78cf.js","924","static/chunks/924-0ab8daba027740c3.js","386","static/chunks/app/courses/%5Bcourse%5D/%5Bchapter%5D/page-d5866f9d129d0efc.js"],""]
+a:I[55953,["295","static/chunks/295-030db3f36cda78cf.js","924","static/chunks/924-0ab8daba027740c3.js","386","static/chunks/app/courses/%5Bcourse%5D/%5Bchapter%5D/page-d5866f9d129d0efc.js"],"SlideContainer"]
+b:T5d9,## 现在开始
+
+直接使用以下模板来作为你的页面，即可在其中尽情地使用 Bootstrap 提供的各种样式和功能。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+```c:T488,### Container
+
+Container 是指在 Bootstrap 的 CSS 中预定义的一系列的类，它们确定了内容区域的宽度。
+
+|                  | Extra small<br><576px | Small<br>≥576px | Medium<br>≥768px | Large<br>≥992px | Extra large<br>≥1200px |
+| ---------------- | --------------------- | --------------- | ---------------- | --------------- | ---------------------- |
+| .container       | 100%                  | 540px           | 720px            | 960px           | 1140px                 |
+| .container-sm    | 100%                  | 540px           | 720px            | 960px           | 1140px                 |
+| .container-md    | 100%                  | 100%            | 720px            | 960px           | 1140px                 |
+| .container-lg    | 100%                  | 100%            | 100%             | 960px           | 1140px                 |
+| .container-xl    | 100%                  | 100%            | 100%             | 100%            | 1140px                 |
+| .container-fluid | 100%                  | 100%            | 100%             | 100%            | 100%                   |
+
+{:style="font-size:60%"}d:T758,### 导航-实例
+
+```html
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+          >Disabled</a
+        >
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        Search
+      </button>
+    </form>
+  </div>
+</nav>
+```e:T730,### 表单-布局
+
+可以使用 .form-group 来对表单进行分组，然后结合表单网格 .form-row 来实现各种自定义的布局。
+
+```html
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input
+      type="text"
+      class="form-control"
+      id="inputAddress"
+      placeholder="1234 Main St"
+    />
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input
+      type="text"
+      class="form-control"
+      id="inputAddress2"
+      placeholder="Apartment, studio, or floor"
+    />
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity" />
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip" />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck" />
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+```2:["$","div",null,{"className":"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8","children":[["$","nav",null,{"className":"mb-6 text-sm","children":[["$","$L9",null,{"href":"/","className":"text-blue-600 hover:text-blue-800","children":"首页"}],["$","span",null,{"className":"mx-2 text-gray-400","children":"/"}],["$","$L9",null,{"href":"/courses/web","className":"text-blue-600 hover:text-blue-800","children":"网页设计与制作"}],["$","span",null,{"className":"mx-2 text-gray-400","children":"/"}],["$","span",null,{"className":"text-gray-600","children":"Bootstrap"}]]}],["$","div",null,{"className":"mb-6","children":[["$","h1",null,{"className":"text-2xl font-bold text-gray-900","children":"Bootstrap"}],["$","p",null,{"className":"text-sm text-gray-500 mt-1","children":["网页设计与制作"," - 第 ",13," 章"]}]]}],["$","div",null,{"className":"bg-blue-50 text-blue-800 text-sm px-4 py-2 rounded-lg mb-4","children":["使用 ← → 方向键或空格键切换幻灯片，按 F 键全屏查看",["$","$L9",null,{"href":"/slides/web/bootstrap","className":"ml-4 text-blue-600 hover:text-blue-800 underline","children":"全屏查看"}]]}],["$","$La",null,{"slides":[{"id":"slide-1","content":"# Bootstrap"},{"id":"slide-2","content":"## Bootstrap 简介\n\nBootstrap 是 Twitter 的两位设计师发起的一个开源项目，2011 年开始在 GitHub 上开源，现在有一个专门的团队维护，非常流行。它是一款响应式、移动优先的前端组件库。\n\n- [官方文档](https://getbootstrap.com/)\n\n{:style=\"font-size:70%\"}"},{"id":"slide-3","content":"$b","children":[{"id":"slide-4","content":"### viewport\n\n`viewport` 这一 `meta` 元素是用来使得页面宽度与设备宽度一致而设计的，其中 `width=device-width` 使得页面宽度与设备宽度一致，`initial-scale=1` 使得默认元素缩放为 100%，`shrink-to-fit=no` 是为了兼容 Safari 9 设计的。"},{"id":"slide-5","content":"### 安全机制\n\n在 `link` 与 `script` 中引入了两个属性来提升页面加载的安全性，`integrity` 是文件的校验和用来避免引入被人篡改过的文件，`crossorigin` 则是跨站安全领域的设置，此处不做展开。"}]},{"id":"slide-6","content":"## 布局\n\nBootstrap 的布局包括一个 container 一个网格系统以及一些实用的布局组件。","children":[{"id":"slide-7","content":"$c"},{"id":"slide-8","content":"### Grid\n\n在 CSS 布局中我们提到了网格系统，Bootstrap 基于 flexbox 实现了一套非常完善的网格系统。行的 `class` 为 `row`，列则根据宽度 `col`/`col-sm`/`col-md`/`col-lg`/`col-xl` 几种，每行宽度为 12 列。\n\n```html\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col\">\n      One of three columns\n    </div>\n    <div class=\"col\">\n      One of three columns\n    </div>\n    <div class=\"col\">\n      One of three columns\n    </div>\n  </div>\n</div>\n```"}]},{"id":"slide-9","content":"## 内容样式\n\nBootstrap 为大部分元素都定义了对应的 class 来使得页面元素样式美观一致。","children":[{"id":"slide-10","content":"### 标题\n\n`<h1>` 到 `<h6>` 在引入 Bootstrap 样式以后都有统一的样式，如果你想让正文的段落看起来像不同的标题级别，可以为它们添加 class 为 `h1` 到 `h6`。\n\n```html\n<p class=\"h1\">h1. Bootstrap heading</p>\n<p class=\"h2\">h2. Bootstrap heading</p>\n<p class=\"h3\">h3. Bootstrap heading</p>\n<p class=\"h4\">h4. Bootstrap heading</p>\n<p class=\"h5\">h5. Bootstrap heading</p>\n<p class=\"h6\">h6. Bootstrap heading</p>\n```"},{"id":"slide-11","content":"### 文本/图像/表格等\n\n针对文本/图像/表格等元素，Bootstrap 提供了大量的样式来帮助调整对齐、颜色等样式。\n\n- [文本](https://getbootstrap.com/docs/4.4/utilities/text/)\n- [图像](https://getbootstrap.com/docs/4.4/content/images/)\n- [表格](https://getbootstrap.com/docs/4.4/content/tables/)\n\n{:style=\"font-size:60%\"}"}]},{"id":"slide-12","content":"## 组件\n\nBootstrap 非常重要的一个优势就是提供了大量视觉设计统一，响应式的组件，能够帮助用户快速的构建自己的站点。","children":[{"id":"slide-13","content":"### 导航-介绍\n\nNavbar 是 Bootstrap 提供的响应式导航栏，它可以固定在页面上方，为用户提供快速在页面中跳转的能力，且能够在屏幕宽度变化是折叠展开。\n\n- 导航栏使用 .navbar 以及 .navbar-expand{-sm|-md|-lg|-xl} 来包裹。\n- 导航栏的宽度默认是占满整个页面宽度的，类似 .container-fluid 。\n- 导航栏应该使用 `<nav>` 元素进行创建。\n\n{:style=\"font-size:70%\"}"},{"id":"slide-14","content":"$d"},{"id":"slide-15","content":"### 导航-样式\n\n导航栏可以引用不同的颜色样式，常见的有三种。\n\n```html\n<nav class=\"navbar navbar-dark bg-dark\">\n  <!-- Navbar content -->\n</nav>\n\n<nav class=\"navbar navbar-dark bg-primary\">\n  <!-- Navbar content -->\n</nav>\n\n<nav class=\"navbar navbar-light\" style=\"background-color: #e3f2fd;\">\n  <!-- Navbar content -->\n</nav>\n```"},{"id":"slide-16","content":"### 表单\n\nBootstrap 对表单也进行了风格统一和美化，提供了表单布局以及样式方面的类来帮助用户快速构建现在风格的页面。"},{"id":"slide-17","content":"### 表单-实例\n\n```html\n<form>\n  <div class=\"form-group\">\n    <label for=\"exampleInputEmail1\">Email address</label>\n    <input\n      type=\"email\"\n      class=\"form-control\"\n      id=\"exampleInputEmail1\"\n      aria-describedby=\"emailHelp\"\n    />\n    <small id=\"emailHelp\" class=\"form-text text-muted\"\n      >We'll never share your email with anyone else.</small\n    >\n  </div>\n  <div class=\"form-group\">\n    <label for=\"exampleInputPassword1\">Password</label>\n    <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" />\n  </div>\n  <div class=\"form-group form-check\">\n    <input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\" />\n    <label class=\"form-check-label\" for=\"exampleCheck1\">Check me out</label>\n  </div>\n  <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n</form>\n```"},{"id":"slide-18","content":"$e"}]},{"id":"slide-19","content":"## 总结\n\nBootstrap 提供了一套完成自洽且能够快速开发的前端库，我们可以在其[官网](https://getbootstrap.com/)找到相关资料并开发自己的站点。"},{"id":"slide-20","content":"## Q & A"}],"globalStyle":".reveal p {\n    text-align: justify;\n    font-size: 0.8em;\n  }\n  .reveal ul {\n    display: block;\n  }\n  .reveal ol {\n    display: block;\n  }","fullscreen":false,"course":"web","chapter":"bootstrap"}],["$","div",null,{"className":"flex justify-between items-center mt-6 pt-6 border-t border-gray-200","children":[["$","$L9",null,{"href":"/courses/web/jQuery","className":"flex items-center text-blue-600 hover:text-blue-800","children":[["$","svg",null,{"className":"w-4 h-4 mr-1","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M15 19l-7-7 7-7"}]}],"上一章：","jQuery"]}],null]}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"课程资料"}],["$","meta","3",{"name":"description","content":"教学课件网站 - Python、Web、网络安全等课程"}]]
+1:null
