@@ -64,16 +64,8 @@ const staticParams = [
   { course: 'online-publishing', chapter: 'web' },
   { course: 'online-publishing', chapter: 'css' },
   { course: 'online-publishing', chapter: 'digital-book' },
-  // apdms
-  { course: 'apdms', chapter: 'introduction' },
-  { course: 'apdms', chapter: 'flask-getting-start' },
-  { course: 'apdms', chapter: 'jinja2' },
-  { course: 'apdms', chapter: 'wtforms' },
   // wps
   { course: 'wps', chapter: 'introduction' },
-  // substitute
-  { course: 'substitute', chapter: 'windbg' },
-  { course: 'substitute', chapter: 'windbg-script' },
 ];
 
 export async function generateStaticParams() {

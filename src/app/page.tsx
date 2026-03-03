@@ -90,24 +90,6 @@ export default function HomePage() {
             </svg>
           </Link>
         </div>
-
-        {/* APDMS */}
-        <div className="bg-white/70 backdrop-blur rounded-2xl p-8 shadow-sm border border-gray-100 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-          <h2 className="section-title">数字媒体安全应用与实践</h2>
-          <p className="text-gray-700 leading-relaxed mt-4">
-            本课程进行 Flask Web 框架开发实践，包括 Jinja2 模板引擎和 WTForms 表单验证等核心内容。
-          </p>
-          <Link
-            href="/courses/apdms"
-            className="inline-flex items-center mt-4 font-medium transition-colors"
-            style={{ color: 'var(--color-primary-light)' }}
-          >
-            课程资料请点击这里
-            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-        </div>
       </div>
 
       {/* Course Tree */}

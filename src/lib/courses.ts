@@ -13,6 +13,24 @@ export interface Course {
 
 export const courses: Course[] = [
   {
+    id: 'aissop',
+    title: '智能系统安全运维与实践',
+    description: 'Windows 系统安全运维、恶意代码分析、虚拟化技术等实践内容。',
+    chapters: [
+      { id: 'introduction', title: '课程概述', order: 0 },
+      { id: 'windows-intro', title: 'Windows 简介', order: 1 },
+      { id: 'windows-install', title: 'Windows 安装', order: 2 },
+      { id: 'cmd-scripts', title: 'CMD 脚本', order: 3 },
+      { id: 'shell', title: 'Shell 命令', order: 4 },
+      { id: 'virtualbox', title: 'VirtualBox 虚拟化', order: 5 },
+      { id: 'windows-components', title: 'Windows 组件', order: 6 },
+      { id: 'maintain', title: '系统维护', order: 7 },
+      { id: 'malware-introduction', title: '恶意软件简介', order: 8 },
+      { id: 'malware-analysis', title: '恶意软件分析', order: 9 },
+      { id: 'cli-to-agent', title: 'CLI 到 Agent', order: 10 },
+    ],
+  },
+  {
     id: 'python',
     title: 'Python 程序设计',
     description: 'Python 编程语言基础与实践，涵盖数据类型、控制流、函数、类、文件操作、数据处理和可视化等内容。',
@@ -55,24 +73,6 @@ export const courses: Course[] = [
     ],
   },
   {
-    id: 'aissop',
-    title: '智能系统安全运维与实践',
-    description: 'Windows 系统安全运维、恶意代码分析、虚拟化技术等实践内容。',
-    chapters: [
-      { id: 'introduction', title: '课程概述', order: 0 },
-      { id: 'windows-intro', title: 'Windows 简介', order: 1 },
-      { id: 'windows-install', title: 'Windows 安装', order: 2 },
-      { id: 'cmd-scripts', title: 'CMD 脚本', order: 3 },
-      { id: 'shell', title: 'Shell 命令', order: 4 },
-      { id: 'virtualbox', title: 'VirtualBox 虚拟化', order: 5 },
-      { id: 'windows-components', title: 'Windows 组件', order: 6 },
-      { id: 'maintain', title: '系统维护', order: 7 },
-      { id: 'malware-introduction', title: '恶意软件简介', order: 8 },
-      { id: 'malware-analysis', title: '恶意软件分析', order: 9 },
-      { id: 'cli-to-agent', title: 'CLI 到 Agent', order: 10 },
-    ],
-  },
-  {
     id: 'online-publishing',
     title: '在线出版',
     description: '在线出版技术与工具，包括 Markdown、Git、GitHub、Hexo、GitBook 等内容。',
@@ -89,31 +89,11 @@ export const courses: Course[] = [
     ],
   },
   {
-    id: 'apdms',
-    title: '数字媒体安全应用与实践',
-    description: 'Flask Web 框架开发实践，包括 Jinja2 模板和 WTForms 表单验证。',
-    chapters: [
-      { id: 'introduction', title: '课程概述', order: 0 },
-      { id: 'flask-getting-start', title: 'Flask 入门', order: 1 },
-      { id: 'jinja2', title: 'Jinja2 模板', order: 2 },
-      { id: 'wtforms', title: 'WTForms 表单', order: 3 },
-    ],
-  },
-  {
     id: 'wps',
     title: 'AI-WPS 辅助办公',
     description: 'WPS Office 与 AI 辅助办公应用。',
     chapters: [
       { id: 'introduction', title: '课程概述', order: 0 },
-    ],
-  },
-  {
-    id: 'substitute',
-    title: '临时代课',
-    description: '临时授课内容，包括 WinDbg 调试等专题。',
-    chapters: [
-      { id: 'windbg', title: 'WinDbg 调试', order: 0 },
-      { id: 'windbg-script', title: 'WinDbg 脚本', order: 1 },
     ],
   },
 ];
