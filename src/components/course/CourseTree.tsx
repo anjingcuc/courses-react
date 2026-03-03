@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useMemo } from 'react';
+import { useMemo } from 'react';
 import {
   ReactFlow,
   Node,
@@ -15,8 +15,17 @@ import {
 import '@xyflow/react/dist/style.css';
 import { courses } from '@/lib/courses';
 
+// Define node data type
+interface CourseNodeData {
+  label: string;
+  level: number;
+  chapterCount?: number;
+  courseId?: string;
+  chapterId?: string;
+}
+
 // Custom node component
-function CourseNode({ data }: NodeProps) {
+function CourseNode({ data }: NodeProps<Node<CourseNodeData>>) {
   const isRoot = data.level === 0;
   const isCourse = data.level === 1;
   const isChapter = data.level === 2;
@@ -64,7 +73,7 @@ const nodeTypes = {
 
 // Convert course data to React Flow nodes and edges
 function createFlowData() {
-  const nodes: Node[] = [];
+  const nodes: Node<CourseNodeData>[] = [];
   const edges: Edge[] = [];
 
   // Root node
