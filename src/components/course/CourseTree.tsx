@@ -1,11 +1,10 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo, useEffect } from 'react';
 import {
   ReactFlow,
   Node,
   Edge,
-  MarkerType,
   useNodesState,
   useEdgesState,
   Position,
@@ -13,6 +12,8 @@ import {
   NodeProps,
   Controls,
   MiniMap,
+  ReactFlowProvider,
+  useReactFlow,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import { courses } from '@/lib/courses';
@@ -54,8 +55,8 @@ function CourseNode({ data }: NodeProps<Node<any>>) {
           </span>
         )}
         {isCourse && (
-          <span className="text-gray-400 text-xs ml-1">
-            {isExpanded ? '▼' : '▶'}
+          <span className="text-gray-400 text-xs ml-1 transition-transform duration-200" style={{ display: 'inline-block', transform: isExpanded ? 'rotate(90deg)' : 'rotate(0deg)' }}>
+            ▶
           </span>
         )}
       </div>
@@ -72,8 +73,8 @@ const nodeTypes = {
   courseNode: CourseNode,
 };
 
-// Create initial nodes (only root and courses)
-function createInitialNodes() {
+// Build all nodes and edges based on expanded state
+function buildFlowData(expandedCourses: Set<string>) {
   const nodes: Node[] = [];
   const edges: Edge[] = [];
 
@@ -86,25 +87,26 @@ function createInitialNodes() {
     data: { label: '📚 课程资料', level: 0 },
   });
 
-  // Course nodes only (chapters hidden by default)
+  // Course nodes
   const courseCount = courses.length;
   const verticalSpacing = 100;
   const totalHeight = (courseCount - 1) * verticalSpacing;
   const startY = 250 - totalHeight / 2;
 
-  courses.forEach((course, index) => {
+  courses.forEach((course, courseIndex) => {
     const courseId = `course-${course.id}`;
-    const y = startY + index * verticalSpacing;
+    const courseY = startY + courseIndex * verticalSpacing;
+    const isExpanded = expandedCourses.has(course.id);
 
     nodes.push({
       id: courseId,
       type: 'courseNode',
-      position: { x: 280, y },
+      position: { x: 280, y: courseY },
       data: {
         label: course.title,
         level: 1,
         chapterCount: course.chapters.length,
-        isExpanded: false,
+        isExpanded,
         courseId: course.id,
       },
     });
@@ -116,73 +118,94 @@ function createInitialNodes() {
       type: 'smoothstep',
       style: { stroke: '#94a3b8', strokeWidth: 2 },
     });
+
+    // Chapter nodes
+    if (course.chapters.length > 0) {
+      const chapterCount = course.chapters.length;
+      const horizontalSpacing = 220;
+      const verticalSpacingChapter = 45;
+      const startX = 280 + horizontalSpacing;
+
+      const maxChaptersPerColumn = 6;
+      const columns = Math.ceil(chapterCount / maxChaptersPerColumn);
+      const chaptersPerColumn = Math.ceil(chapterCount / columns);
+
+      course.chapters.forEach((chapter, index) => {
+        const columnIndex = Math.floor(index / chaptersPerColumn);
+        const rowIndex = index % chaptersPerColumn;
+
+        const x = startX + columnIndex * horizontalSpacing;
+        const columnHeight = Math.min(chaptersPerColumn, chapterCount - columnIndex * chaptersPerColumn) * verticalSpacingChapter;
+        const columnStartY = courseY - columnHeight / 2 + verticalSpacingChapter / 2;
+        const y = columnStartY + rowIndex * verticalSpacingChapter;
+
+        const chapterId = `chapter-${course.id}-${chapter.id}`;
+
+        nodes.push({
+          id: chapterId,
+          type: 'courseNode',
+          position: { x, y },
+          data: {
+            label: chapter.title,
+            level: 2,
+          },
+          hidden: !isExpanded,
+        });
+
+        // Connect to course node or previous chapter in same column
+        if (columnIndex === 0) {
+          edges.push({
+            id: `edge-${courseId}-${chapterId}`,
+            source: courseId,
+            target: chapterId,
+            type: 'smoothstep',
+            style: { stroke: '#cbd5e1', strokeWidth: 1.5 },
+            hidden: !isExpanded,
+          });
+        } else {
+          const prevChapterIndex = columnIndex * chaptersPerColumn - 1;
+          if (prevChapterIndex >= 0) {
+            const prevChapterId = `chapter-${course.id}-${course.chapters[prevChapterIndex].id}`;
+            edges.push({
+              id: `edge-${prevChapterId}-${chapterId}`,
+              source: prevChapterId,
+              target: chapterId,
+              type: 'smoothstep',
+              style: { stroke: '#cbd5e1', strokeWidth: 1.5 },
+              hidden: !isExpanded,
+            });
+          }
+        }
+      });
+    }
   });
 
   return { nodes, edges };
 }
 
-// Create chapter nodes for a specific course
-function createChapterNodes(
-  courseId: string,
-  courseY: number,
-  isExpanded: boolean
-): { nodes: Node[]; edges: Edge[] } {
-  const course = courses.find((c) => c.id === courseId);
-  if (!course) return { nodes: [], edges: [] };
-
-  const nodes: Node[] = [];
-  const edges: Edge[] = [];
-  const chapterCount = course.chapters.length;
-
-  // Calculate positions for chapters
-  const horizontalSpacing = 220;
-  const verticalSpacing = 45;
-  const startX = 280 + horizontalSpacing;
-
-  // Determine if chapters should be arranged horizontally or in a grid
-  const maxChaptersPerColumn = 6;
-  const columns = Math.ceil(chapterCount / maxChaptersPerColumn);
-  const chaptersPerColumn = Math.ceil(chapterCount / columns);
-
-  course.chapters.forEach((chapter, index) => {
-    const columnIndex = Math.floor(index / chaptersPerColumn);
-    const rowIndex = index % chaptersPerColumn;
-
-    const x = startX + columnIndex * horizontalSpacing;
-    const columnHeight = Math.min(chaptersPerColumn, chapterCount - columnIndex * chaptersPerColumn) * verticalSpacing;
-    const columnStartY = courseY - columnHeight / 2 + verticalSpacing / 2;
-    const y = columnStartY + rowIndex * verticalSpacing;
-
-    const chapterId = `chapter-${courseId}-${chapter.id}`;
-
-    nodes.push({
-      id: chapterId,
-      type: 'courseNode',
-      position: { x, y },
-      data: {
-        label: chapter.title,
-        level: 2,
-      },
-      hidden: !isExpanded,
-    });
-
-    const sourceId = columnIndex === 0 ? `course-${courseId}` : `chapter-${courseId}-${course.chapters[columnIndex * chaptersPerColumn - 1]?.id}`;
-
-    edges.push({
-      id: `edge-${sourceId}-${chapterId}`,
-      source: sourceId,
-      target: chapterId,
-      type: 'smoothstep',
-      style: { stroke: '#cbd5e1', strokeWidth: 1.5 },
-      hidden: !isExpanded,
-    });
-  });
-
-  return { nodes, edges };
-}
-
-export function CourseTree() {
+function CourseTreeInner() {
   const [expandedCourses, setExpandedCourses] = useState<Set<string>>(new Set());
+  const { fitView } = useReactFlow();
+
+  const { nodes: initialNodes, edges: initialEdges } = useMemo(
+    () => buildFlowData(new Set()),
+    []
+  );
+
+  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
+  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+
+  // Update nodes when expanded courses change
+  useEffect(() => {
+    const { nodes: newNodes, edges: newEdges } = buildFlowData(expandedCourses);
+    setNodes(newNodes);
+    setEdges(newEdges);
+
+    // Fit view after a short delay to allow React to process the changes
+    setTimeout(() => {
+      fitView({ padding: 0.3, duration: 300 });
+    }, 50);
+  }, [expandedCourses, setNodes, setEdges, fitView]);
 
   const toggleCourse = useCallback((courseId: string) => {
     setExpandedCourses((prev) => {
@@ -195,48 +218,6 @@ export function CourseTree() {
       return next;
     });
   }, []);
-
-  // Build nodes and edges based on expanded state
-  const { nodes: allNodes, edges: allEdges } = (() => {
-    const initial = createInitialNodes();
-    const allNodesList = [...initial.nodes];
-    const allEdgesList = [...initial.edges];
-
-    courses.forEach((course, index) => {
-      const courseCount = courses.length;
-      const verticalSpacing = 100;
-      const totalHeight = (courseCount - 1) * verticalSpacing;
-      const startY = 250 - totalHeight / 2;
-      const courseY = startY + index * verticalSpacing;
-
-      const isExpanded = expandedCourses.has(course.id);
-      const { nodes: chapterNodes, edges: chapterEdges } = createChapterNodes(
-        course.id,
-        courseY,
-        isExpanded
-      );
-
-      allNodesList.push(...chapterNodes);
-      allEdgesList.push(...chapterEdges);
-
-      // Update course node's isExpanded state
-      const courseNode = allNodesList.find((n) => n.id === `course-${course.id}`);
-      if (courseNode) {
-        courseNode.data.isExpanded = isExpanded;
-      }
-    });
-
-    return { nodes: allNodesList, edges: allEdgesList };
-  })();
-
-  const [nodes, setNodes, onNodesChange] = useNodesState(allNodes);
-  const [edges, setEdges, onEdgesChange] = useEdgesState(allEdges);
-
-  // Update nodes when expanded courses change
-  useState(() => {
-    setNodes(allNodes);
-    setEdges(allEdges);
-  });
 
   // Handle node click for expand/collapse
   const onNodeClick = useCallback(
@@ -261,7 +242,6 @@ export function CourseTree() {
         fitViewOptions={{ padding: 0.4 }}
         minZoom={0.3}
         maxZoom={1.5}
-        defaultViewport={{ x: 0, y: 0, zoom: 0.9 }}
         proOptions={{ hideAttribution: true }}
         nodesDraggable={false}
         nodesConnectable={false}
@@ -279,5 +259,13 @@ export function CourseTree() {
         />
       </ReactFlow>
     </div>
+  );
+}
+
+export function CourseTree() {
+  return (
+    <ReactFlowProvider>
+      <CourseTreeInner />
+    </ReactFlowProvider>
   );
 }
