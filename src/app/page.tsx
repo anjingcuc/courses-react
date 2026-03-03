@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { courses, getCourseStats } from '@/lib/courses';
-import { CourseTree } from '@/components/course/CourseTree';
 
 export default function HomePage() {
   const stats = getCourseStats();
@@ -90,14 +89,6 @@ export default function HomePage() {
             </svg>
           </Link>
         </div>
-      </div>
-
-      {/* Course Tree */}
-      <div className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-primary)' }}>
-          课程结构
-        </h2>
-        <CourseTree />
       </div>
 
       {/* Course Cards Grid */}
