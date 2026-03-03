@@ -15,12 +15,27 @@ import {
   ReactFlowProvider,
   useReactFlow,
 } from '@xyflow/react';
+import dagre from '@dagrejs/dagre';
 import '@xyflow/react/dist/style.css';
 import { courses } from '@/lib/courses';
 
-// Custom node component
+// Layout configuration
+const NODE_WIDTH = 180;
+const NODE_HEIGHT = 50;
+const HORIZONTAL_SPACING = 120;
+const VERTICAL_SPACING = 25;
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function CourseNode({ data }: NodeProps<Node<any>>) {
+type CourseNodeData = {
+  label: string;
+  level: number;
+  chapterCount?: number;
+  isExpanded?: boolean;
+  courseId?: string;
+};
+
+// Custom node component
+function CourseNode({ data }: NodeProps<Node<CourseNodeData>>) {
   const isRoot = data.level === 0;
   const isCourse = data.level === 1;
   const isExpanded = data.isExpanded;
@@ -48,14 +63,17 @@ function CourseNode({ data }: NodeProps<Node<any>>) {
       />
       <div className="flex items-center gap-2">
         <span className={`w-2.5 h-2.5 rounded-full ${dotColor} flex-shrink-0`} />
-        <span className="whitespace-nowrap">{data.label as string}</span>
+        <span className="whitespace-nowrap">{data.label}</span>
         {data.chapterCount && (
           <span className="text-xs bg-blue-100 text-blue-600 px-2 py-0.5 rounded-full">
-            {data.chapterCount as number}
+            {data.chapterCount}
           </span>
         )}
         {isCourse && (
-          <span className="text-gray-400 text-xs ml-1 transition-transform duration-200" style={{ display: 'inline-block', transform: isExpanded ? 'rotate(90deg)' : 'rotate(0deg)' }}>
+          <span
+            className="text-gray-400 text-xs ml-1 transition-transform duration-200"
+            style={{ display: 'inline-block', transform: isExpanded ? 'rotate(90deg)' : 'rotate(0deg)' }}
+          >
             ▶
           </span>
         )}
@@ -73,9 +91,85 @@ const nodeTypes = {
   courseNode: CourseNode,
 };
 
-// Build all nodes and edges based on expanded state
-function buildFlowData(expandedCourses: Set<string>) {
-  const nodes: Node[] = [];
+// Use dagre to calculate auto layout
+function getLayoutedElements(
+  nodes: Node<CourseNodeData>[],
+  edges: Edge[],
+  expandedCourses: Set<string>
+) {
+  const dagreGraph = new dagre.graphlib.Graph();
+  dagreGraph.setDefaultEdgeLabel(() => ({}));
+
+  dagreGraph.setGraph({
+    rankdir: 'LR',
+    nodesep: HORIZONTAL_SPACING,
+    ranksep: VERTICAL_SPACING * 4,
+    marginx: 60,
+    marginy: 60,
+  });
+
+  // Filter visible nodes
+  const visibleNodes = nodes.filter((node) => {
+    if (node.data.level === 2) {
+      const courseId = node.id.split('-')[1];
+      return expandedCourses.has(courseId);
+    }
+    return true;
+  });
+
+  // Add nodes to dagre
+  visibleNodes.forEach((node) => {
+    dagreGraph.setNode(node.id, { width: NODE_WIDTH, height: NODE_HEIGHT });
+  });
+
+  // Add edges to dagre (only for visible nodes)
+  edges.forEach((edge) => {
+    if (visibleNodes.some((n) => n.id === edge.source) && visibleNodes.some((n) => n.id === edge.target)) {
+      dagreGraph.setEdge(edge.source, edge.target);
+    }
+  });
+
+  // Calculate layout
+  dagre.layout(dagreGraph);
+
+  // Update node positions
+  const layoutedNodes: Node<CourseNodeData>[] = nodes.map((node) => {
+    const dagreNode = dagreGraph.node(node.id);
+    const isVisible = visibleNodes.includes(node);
+
+    if (dagreNode && isVisible) {
+      return {
+        ...node,
+        hidden: false,
+        position: {
+          x: dagreNode.x - NODE_WIDTH / 2,
+          y: dagreNode.y - NODE_HEIGHT / 2,
+        },
+      };
+    }
+
+    return {
+      ...node,
+      hidden: !isVisible,
+    };
+  });
+
+  // Update edge visibility
+  const layoutedEdges: Edge[] = edges.map((edge) => {
+    const sourceVisible = visibleNodes.some((n) => n.id === edge.source);
+    const targetVisible = visibleNodes.some((n) => n.id === edge.target);
+    return {
+      ...edge,
+      hidden: !(sourceVisible && targetVisible),
+    };
+  });
+
+  return { nodes: layoutedNodes, edges: layoutedEdges };
+}
+
+// Build all nodes and edges
+function buildFlowData(): { nodes: Node<CourseNodeData>[]; edges: Edge[] } {
+  const nodes: Node<CourseNodeData>[] = [];
   const edges: Edge[] = [];
 
   // Root node
@@ -83,30 +177,23 @@ function buildFlowData(expandedCourses: Set<string>) {
   nodes.push({
     id: rootId,
     type: 'courseNode',
-    position: { x: 0, y: 250 },
+    position: { x: 0, y: 0 },
     data: { label: '📚 课程资料', level: 0 },
   });
 
   // Course nodes
-  const courseCount = courses.length;
-  const verticalSpacing = 100;
-  const totalHeight = (courseCount - 1) * verticalSpacing;
-  const startY = 250 - totalHeight / 2;
-
-  courses.forEach((course, courseIndex) => {
+  courses.forEach((course) => {
     const courseId = `course-${course.id}`;
-    const courseY = startY + courseIndex * verticalSpacing;
-    const isExpanded = expandedCourses.has(course.id);
 
     nodes.push({
       id: courseId,
       type: 'courseNode',
-      position: { x: 280, y: courseY },
+      position: { x: 0, y: 0 },
       data: {
         label: course.title,
         level: 1,
         chapterCount: course.chapters.length,
-        isExpanded,
+        isExpanded: false,
         courseId: course.id,
       },
     });
@@ -120,64 +207,29 @@ function buildFlowData(expandedCourses: Set<string>) {
     });
 
     // Chapter nodes
-    if (course.chapters.length > 0) {
-      const chapterCount = course.chapters.length;
-      const horizontalSpacing = 220;
-      const verticalSpacingChapter = 45;
-      const startX = 280 + horizontalSpacing;
+    course.chapters.forEach((chapter) => {
+      const chapterId = `chapter-${course.id}-${chapter.id}`;
 
-      const maxChaptersPerColumn = 6;
-      const columns = Math.ceil(chapterCount / maxChaptersPerColumn);
-      const chaptersPerColumn = Math.ceil(chapterCount / columns);
-
-      course.chapters.forEach((chapter, index) => {
-        const columnIndex = Math.floor(index / chaptersPerColumn);
-        const rowIndex = index % chaptersPerColumn;
-
-        const x = startX + columnIndex * horizontalSpacing;
-        const columnHeight = Math.min(chaptersPerColumn, chapterCount - columnIndex * chaptersPerColumn) * verticalSpacingChapter;
-        const columnStartY = courseY - columnHeight / 2 + verticalSpacingChapter / 2;
-        const y = columnStartY + rowIndex * verticalSpacingChapter;
-
-        const chapterId = `chapter-${course.id}-${chapter.id}`;
-
-        nodes.push({
-          id: chapterId,
-          type: 'courseNode',
-          position: { x, y },
-          data: {
-            label: chapter.title,
-            level: 2,
-          },
-          hidden: !isExpanded,
-        });
-
-        // Connect to course node or previous chapter in same column
-        if (columnIndex === 0) {
-          edges.push({
-            id: `edge-${courseId}-${chapterId}`,
-            source: courseId,
-            target: chapterId,
-            type: 'smoothstep',
-            style: { stroke: '#cbd5e1', strokeWidth: 1.5 },
-            hidden: !isExpanded,
-          });
-        } else {
-          const prevChapterIndex = columnIndex * chaptersPerColumn - 1;
-          if (prevChapterIndex >= 0) {
-            const prevChapterId = `chapter-${course.id}-${course.chapters[prevChapterIndex].id}`;
-            edges.push({
-              id: `edge-${prevChapterId}-${chapterId}`,
-              source: prevChapterId,
-              target: chapterId,
-              type: 'smoothstep',
-              style: { stroke: '#cbd5e1', strokeWidth: 1.5 },
-              hidden: !isExpanded,
-            });
-          }
-        }
+      nodes.push({
+        id: chapterId,
+        type: 'courseNode',
+        position: { x: 0, y: 0 },
+        data: {
+          label: chapter.title,
+          level: 2,
+        },
+        hidden: true,
       });
-    }
+
+      edges.push({
+        id: `edge-${courseId}-${chapterId}`,
+        source: courseId,
+        target: chapterId,
+        type: 'smoothstep',
+        style: { stroke: '#cbd5e1', strokeWidth: 1.5 },
+        hidden: true,
+      });
+    });
   });
 
   return { nodes, edges };
@@ -187,25 +239,41 @@ function CourseTreeInner() {
   const [expandedCourses, setExpandedCourses] = useState<Set<string>>(new Set());
   const { fitView } = useReactFlow();
 
-  const { nodes: initialNodes, edges: initialEdges } = useMemo(
-    () => buildFlowData(new Set()),
-    []
-  );
+  const { nodes: initialNodes, edges: initialEdges } = useMemo(() => buildFlowData(), []);
 
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
-  // Update nodes when expanded courses change
+  // Apply layout when expanded courses change
   useEffect(() => {
-    const { nodes: newNodes, edges: newEdges } = buildFlowData(expandedCourses);
-    setNodes(newNodes);
-    setEdges(newEdges);
+    const { nodes: layoutedNodes, edges: layoutedEdges } = getLayoutedElements(
+      initialNodes,
+      initialEdges,
+      expandedCourses
+    );
 
-    // Fit view after a short delay to allow React to process the changes
+    // Update course expansion states
+    const updatedNodes = layoutedNodes.map((node) => {
+      if (node.data.level === 1 && node.data.courseId) {
+        return {
+          ...node,
+          data: {
+            ...node.data,
+            isExpanded: expandedCourses.has(node.data.courseId),
+          },
+        };
+      }
+      return node;
+    });
+
+    setNodes(updatedNodes);
+    setEdges(layoutedEdges);
+
+    // Fit view after layout
     setTimeout(() => {
-      fitView({ padding: 0.3, duration: 300 });
-    }, 50);
-  }, [expandedCourses, setNodes, setEdges, fitView]);
+      fitView({ padding: 0.3, duration: 400 });
+    }, 100);
+  }, [expandedCourses, initialNodes, initialEdges, setNodes, setEdges, fitView]);
 
   const toggleCourse = useCallback((courseId: string) => {
     setExpandedCourses((prev) => {
@@ -219,11 +287,10 @@ function CourseTreeInner() {
     });
   }, []);
 
-  // Handle node click for expand/collapse
   const onNodeClick = useCallback(
-    (_event: React.MouseEvent, node: Node) => {
+    (_event: React.MouseEvent, node: Node<CourseNodeData>) => {
       if (node.data.level === 1 && node.data.courseId) {
-        toggleCourse(node.data.courseId as string);
+        toggleCourse(node.data.courseId);
       }
     },
     [toggleCourse]
@@ -240,7 +307,7 @@ function CourseTreeInner() {
         nodeTypes={nodeTypes}
         fitView
         fitViewOptions={{ padding: 0.4 }}
-        minZoom={0.3}
+        minZoom={0.2}
         maxZoom={1.5}
         proOptions={{ hideAttribution: true }}
         nodesDraggable={false}
